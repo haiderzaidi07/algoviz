@@ -1,0 +1,31 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarala:wght@400;700&display=swap') */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.inputgroup {
+  @apply flex items-center mb-1.5
+}
+
+.radio {
+  @apply bg-custred text-custblue hover:ring-1 hover:ring-custblue focus:ring-custblue checked:ring-1 cursor-pointer 
+}
+
+html {
+  @apply bg-background
+}
+
+.heading {
+  @apply font-primary text-txt text-2xl
+}
+
+.option {
+  @apply font-secondary text-txt text-lg cursor-pointer ml-2
+}
+
+.btn {
+  @apply font-secondary py-1 px-3 my-3 hover:text-txt hover:shadow-md transform hover:scale-105 transition ease-out duration-200
+}
+
