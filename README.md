@@ -1,30 +1,58 @@
-# React + TypeScript + Vite
+# AlgoViz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An application to visualize performance of Kruskal's and Prim’s algorithms on graphs, either sparse and dense, with inputs ranging from 5 to 250 nodes
 
-Currently, two official plugins are available:
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+The live demo of this website can be accessed at: https://algovyz.netlify.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Custom graph size
+- Ability to drag and move nodes around
+- Measures performance of algorithms upto 0.1 milliseconds
+
+
+## Tech Stack
+
+**Client:** TypeScript, React, TailwindCSS, D3.js
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/haiderzaidi07/algoviz.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Go to the project directory
+
+```bash
+cd algoviz/
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the server
+
+```bash
+npm run dev
+```
+
+
+## Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
+
+
+## Further Optimizations
+
+What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
