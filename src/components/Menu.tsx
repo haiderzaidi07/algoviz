@@ -252,7 +252,7 @@ const Menu: FC<Props> = ({ setGraph, graph }) => {
     <div className="px-10 pt-10 md:w-[25%]">
       <div className="flex items-center">
         <img src="./algovizlogo.svg" alt="logo" />
-        <h1 className="font-primary text-txt text-5xl ml-3">AlgoViz</h1>
+        <h1 className="font-primary text-txt text-5xl ml-3 select-none">AlgoViz</h1>
       </div>
       <legend className="heading mt-12 mb-3">Number of Nodes:</legend>
       <div className="inputgroup">

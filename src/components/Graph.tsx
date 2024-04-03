@@ -49,23 +49,26 @@ const Graph: FC<Props> = ({ graph }) => {
       .join("line")
       .attr("stroke-width", 2);
 
+    const edgeLabels = svg.selectAll("text.edge-label")
+      .data(edges)
+      .enter().append("text")
+      .attr("class", "edge-label")
+      .attr("cursor", "default")
+      .style("user-select", "none")
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "central")
+      .text(d => d.weight)
+      .attr('fill', '#EAEAEA');
+
     const node = svg.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
+      .attr("cursor", "pointer")
       .selectAll("circle")
       .data(nodes)
       .join("circle")
       .attr("r", 10)
       .attr("fill", '#08D9D6');
-
-    const edgeLabels = svg.selectAll("text.edge-label")
-      .data(edges)
-      .enter().append("text")
-      .attr("class", "edge-label")
-      .attr("text-anchor", "middle")
-      .attr("dominant-baseline", "central")
-      .text(d => d.weight)
-      .attr('fill', '#EAEAEA');
 
     node.append("title")
       .text(d => `id: ${d.id}`);
