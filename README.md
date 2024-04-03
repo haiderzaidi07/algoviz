@@ -2,7 +2,7 @@
 
 An application to visualize performance of Kruskal's and Prim’s algorithms on graphs, either sparse and dense, with inputs ranging from 5 to 250 nodes
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![AlgoViz GIF](https://github.com/haiderzaidi07/haiderzaidi07/blob/main/algoviz.gif?raw=true)
 
 ## Live Demo
 
