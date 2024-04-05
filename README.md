@@ -1,6 +1,6 @@
 # AlgoViz
 
-An application to visualize performance of Kruskal's and Prim’s algorithms on graphs, either sparse and dense, with inputs ranging from 5 to 250 nodes
+An application to visualize the performance of Kruskal's and Prim’s algorithms on graphs, either sparse or dense, with inputs ranging from 5 to 250 nodes
 
 ![AlgoViz GIF](https://github.com/haiderzaidi07/haiderzaidi07/blob/main/algoviz.gif?raw=true)
 
@@ -13,7 +13,7 @@ The live demo of this website can be accessed at: https://algovyz.netlify.app/
 
 - Custom graph size
 - Ability to drag and move nodes around
-- Measures performance of algorithms upto 0.1 milliseconds
+- Measures the performance of algorithms up to 0.1 milliseconds
 
 
 ## Tech Stack
@@ -50,9 +50,10 @@ npm run dev
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+- Learnt to use D3.js to implement force directed graph
+- Learnt to use "performance" object in JavaScript to measure the running time of algorithms
 
 
 ## Further Optimizations
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+- Add specific types for drag and simulation ticking methods in Graph.tsx
